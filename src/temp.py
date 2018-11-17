@@ -13,7 +13,7 @@ root.geometry('1300x800')
 root.resizable(False,False)
 root.flag = True
 root.start=False
-k='22'
+k='1'
 #背景
 
 canvas = tkinter.Canvas(root,
@@ -100,7 +100,7 @@ name = tkinter.StringVar()
 typeEntered = ttk.Entry(root, width=30, textvariable=name)
 typeEntered.place(x=920, y=505, height=30)
 typeEntered.focus() 
-''' # 当程序运行时,光标默认会出现在该文本框中
+''' 
 def rtnkey(event=None):
     #print(e.get())
     global k
@@ -108,7 +108,7 @@ def rtnkey(event=None):
     #return e.get()
 
 e = tkinter.StringVar()
-entry = ttk.Entry(root, validate='key', textvariable=e, width=30)
+entry = ttk.Entry(root, validate='key', textvariable=e, width=30)#填完值需要回车
 entry.place(x=920, y=505, height=30)
 entry.focus()  # 当程序运行时,光标默认会出现在该文本框中
 entry.bind('<Return>', rtnkey)
