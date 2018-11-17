@@ -22,7 +22,7 @@ match1 = '系统消息'
 def matchh(value):
     match2=value
     return match2
-match2 = '2'
+match2 = '我要红包'
 l = [0]
 person =[]
 able_person = []
