@@ -47,7 +47,8 @@ def select_1(value):
     filenew = open('final_result.txt','w',encoding='utf-8')
     f = fnew.readlines()
     l = [x for x in f]
-    match2=value
+    if（value!='1'）:
+        match2=value
     print(match2+'ok1')
     for n in range(len(l)):
         if match2 in l[n]:
